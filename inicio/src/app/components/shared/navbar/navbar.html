@@ -1,1 +1,17 @@
-<p>navbar works!</p>
+<nav>
+  <a routerLink="/" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">Contador</a>
+  <a [routerLink]="['/car']" [routerLinkActive]="'active'">Carro</a>
+  <a [routerLink]="['/dragonball']" [routerLinkActive]="'active'">Dragonball</a>
+</nav>
+
+
+
+<!--
+-Dentro de pages crear un componente dragonball
+* .ts
+* .html -> Titulo -> Page dragonball
+-Crear la ruta correspondiente '/dragonball'
+-Agregarlo al nabvar, que aparezca al final y tenga el mismo
+comportamiento que los demas
+
+-->

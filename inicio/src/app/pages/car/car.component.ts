@@ -5,11 +5,14 @@ import {Component, signal, computed} from '@angular/core';
 })
 
 export class CarComponent {
-  brand = signal('Renault') ;
-  student  = signal('sebastian');
-  year = signal(2020);
+  brand = "Renault";
+  student = "sebastian";
+  year = 2020;
+  //brand = signal('Renault') ;
+  //student  = signal('sebastian');
+  //year = signal(2020);
   //getCarDescription = computed(() => `${this.brand()} - ${this.student()} - ${this.year()}`);
-  capitalizedStudent = computed(() => `${this.brand()} - ${this.student()}`);
+  //capitalizedStudent = computed(() => `${this.brand()} - ${this.student()}`);
 
   getCarDescription() {
     return `${this.brand} - ${this.year}`;
