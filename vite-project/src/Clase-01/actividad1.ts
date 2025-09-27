@@ -7,7 +7,7 @@ export interface Librodetalles {
 
 export interface Biblioteca {
     archivo: string;
-    documento: string;
+    documento: number;
     librodetalles: Librodetalles;
 }
 
