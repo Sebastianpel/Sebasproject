@@ -1,0 +1,20 @@
+<h3>Listado</h3>
+<ul>
+
+  @for (character of characters(); track character.id; let idx = $index){
+    @if(character.power > 1000) {
+      <li>
+        <span> {{ idx + 1 }} - {{ character.name }}:</span>
+        <span
+            [class.text-danger]="character.power >8000"
+            [class.text-info]="character.power <= 8000"
+          >{{ character.power }}</span>
+      </li>
+    }@else {
+      <li>
+        <span>Personaje con poco poder</span>
+      </li>
+
+    }
+  }
+</ul>

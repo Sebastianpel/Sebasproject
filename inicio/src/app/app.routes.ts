@@ -3,6 +3,7 @@ import {Routes} from '@angular/router';
 import {CarComponent} from './pages/car/car.component';
 import {CounterPageComponent} from './pages/counter/counter-page.component';
 import {dragonballComponent} from './pages/dragonball/dragonball.component';
+import {dragonballSuperComponent} from './pages/dragonball-super/dragonball-super.component';
 
 export const routes: Routes = [
   {
@@ -14,13 +15,17 @@ export const routes: Routes = [
     path: '',
     component: CounterPageComponent
   },
-  {
-    path: '*',
-    redirectTo: ''
-  },
+
   {
     path: 'dragonball',
     component: dragonballComponent
-  }
-
+  },
+  {
+    path: 'dragonball-super',
+    component: dragonballSuperComponent
+  },
+  {
+    path: '**',
+    redirectTo: ''
+  },
 ];

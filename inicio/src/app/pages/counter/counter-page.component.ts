@@ -26,6 +26,7 @@ export class CounterPageComponent {
   }
   reset() {
     this.counter = 0;
+    this.counterSignal.set(0);
   }
 }
 
