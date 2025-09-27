@@ -8,7 +8,7 @@ export class CarComponent {
   brand = signal('Renault') ;
   student  = signal('sebastian');
   year = signal(2020);
-  getCarDescription = computed(() => `${this.brand()} - ${this.student()} - ${this.year()}`);
+  //getCarDescription = computed(() => `${this.brand()} - ${this.student()} - ${this.year()}`);
   capitalizedStudent = computed(() => `${this.brand()} - ${this.student()}`);
 
   getCarDescription() {
