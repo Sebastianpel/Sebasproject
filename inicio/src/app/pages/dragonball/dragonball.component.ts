@@ -33,7 +33,7 @@ export class dragonballComponent {
   });
 
   addCharacter() {
-    if(!this.name() && !this.power() && this.power() <0) {
+    if(!this.name() || !this.power() || this.power() <0) {
       return;
     }
     const newCharacter= {
