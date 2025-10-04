@@ -15,7 +15,6 @@ export const routes: Routes = [
     path: '',
     component: CounterPageComponent
   },
-
   {
     path: 'dragonball',
     component: dragonballComponent
