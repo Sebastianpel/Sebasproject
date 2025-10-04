@@ -22,8 +22,8 @@ export class dragonballComponent {
   characters = signal<Character[]>([
     {id: 1, name: 'Goku', power: 8080},
     {id: 2, name: 'Benja', power: 7000},
-    {id: 3, name: 'Benardo', power: 4000},
-    {id: 4, name: 'Benjamin', power: 500 },
+    {id: 3, name: 'Benardo', power: 500},
+    {id: 4, name: 'Benjamin', power: 4000 },
   ]);
 
   powerClass = computed(() => {
