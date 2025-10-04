@@ -17,15 +17,14 @@ export class CharacterAdd {
     if(!this.name() || !this.power() || this.power() <0) {
       return;
     }
-    const newCharacter: Character = {
-      id: 1000,//this.characters.length + 1,
+    const newObjectCharacter: Character = {
+      id: Math.floor(Math.random() * 1000),//this.characters.length + 1,
       name: this.name(),
       power: this.power(),
     }
-
-    // this.characters().push(newCharacter);
     //this.characters.update((list) => [...list, newCharacter])
-    console.log(newCharacter);
+    //console.log(newCharacter);
+    this.newCharacter.emit(newObjectCharacter);
     this.resetFields();
   }
 

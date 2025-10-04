@@ -36,4 +36,8 @@ export class dragonballSuperComponent {
     };
   });
 
+  viewCharacter(character: Character) {
+    this.characters.update(list => [...list, character]);
+    console.log(character);
+  }
 }
